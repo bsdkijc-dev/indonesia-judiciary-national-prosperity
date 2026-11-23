@@ -1,0 +1,51 @@
+indicator_id,domain_id,domain_name,indicator_name,unit,formula,direction,default_classification
+IND-01-01,DOM-01,Judicial Performance,Case Clearance Rate,percentage,decided_cases / incoming_cases * 100,Higher is better,P5
+IND-01-02,DOM-01,Judicial Performance,Average Case Disposition Time (Days),days,sum(disposition_days) / decided_cases,Lower is better,P5
+IND-01-03,DOM-01,Judicial Performance,Pending Case Backlog Ratio,percentage,pending_cases / total_caseload * 100,Lower is better,P5
+IND-01-04,DOM-01,Judicial Performance,First-Instance On-Time Decision Rate,percentage,ontime_decisions / total_decisions * 100,Higher is better,P5
+IND-01-05,DOM-01,Judicial Performance,Appeal Rate,percentage,appealed_cases / decided_cases * 100,Contextual,P5
+IND-01-06,DOM-01,Judicial Performance,Cassation Affirmation Rate,percentage,affirmed_cassations / total_cassations * 100,Higher is better,P5
+IND-01-07,DOM-01,Judicial Performance,Judicial Workload per Judge,cases_per_judge,total_caseload / active_judges,Balanced,P5
+IND-01-08,DOM-01,Judicial Performance,Minute-Taking & File Completion Rate,percentage,completed_minutasi / decided_cases * 100,Higher is better,P5
+IND-01-09,DOM-01,Judicial Performance,Mediation Success Rate,percentage,successful_mediations / total_mediations * 100,Higher is better,P5
+IND-01-10,DOM-01,Judicial Performance,Execution of Civil Judgments Rate,percentage,executed_judgments / executable_judgments * 100,Higher is better,P5
+IND-02-01,DOM-02,Access to Justice,Prodeo (Fee-Waiver) Case Share,percentage,prodeo_cases / total_eligible_cases * 100,Higher is better,P5
+IND-02-02,DOM-02,Access to Justice,Posbakum (Legal Aid Post) Utilization Rate,cases_per_100k,posbakum_beneficiaries / population * 100000,Higher is better,P5
+IND-02-03,DOM-02,Access to Justice,Mobile Court (Sidang Keliling) Coverage,sessions_per_district,mobile_sessions / districts_served,Higher is better,P5
+IND-02-04,DOM-02,Access to Justice,Court Geographic Accessibility Index,index_0_100,weighted_distance_population_score,Higher is better,P5
+IND-02-05,DOM-02,Access to Justice,Disability-Accessible Courtroom Ratio,percentage,accessible_courts / total_courts * 100,Higher is better,P5
+IND-02-06,DOM-02,Access to Justice,Small Claims (Gugatan Sederhana) Adoption,percentage,small_claims / eligible_civil_cases * 100,Higher is better,P5
+IND-02-07,DOM-02,Access to Justice,Language & Sign Interpreter Availability,percentage,courts_with_interpreter / total_courts * 100,Higher is better,P5
+IND-02-08,DOM-02,Access to Justice,Women & Vulnerable Group Legal Aid Share,percentage,vulnerable_aid_cases / total_aid_cases * 100,Higher is better,P5
+IND-02-09,DOM-02,Access to Justice,Average Out-of-Pocket Court Fee Ratio,percentage_of_gdp_pc,avg_court_fee / provincial_monthly_wage * 100,Lower is better,P5
+IND-02-10,DOM-02,Access to Justice,Public Legal Information Inquiry Resolution,percentage,resolved_inquiries / total_inquiries * 100,Higher is better,P5
+IND-03-01,DOM-03,Business & Economic Justice,Commercial Contract Dispute Resolution Time,days,sum(commercial_days) / decided_commercial,Lower is better,P5
+IND-03-02,DOM-03,Business & Economic Justice,Bankruptcy & PKPU Clearance Rate,percentage,decided_pkpu_bankruptcy / incoming_pkpu_bankruptcy * 100,Higher is better,P5
+IND-03-03,DOM-03,Business & Economic Justice,Intellectual Property Dispute Disposition Time,days,sum(ip_days) / decided_ip_cases,Lower is better,P5
+IND-03-04,DOM-03,Business & Economic Justice,Industrial Relations Dispute Settlement Rate,percentage,settled_phi_cases / total_phi_cases * 100,Higher is better,P5
+IND-03-05,DOM-03,Business & Economic Justice,Tax Court Dispute Clearance Rate,percentage,decided_tax_cases / incoming_tax_cases * 100,Higher is better,P5
+IND-03-06,DOM-03,Business & Economic Justice,MSME Small Claims Recovery Rate,percentage,recovered_value / claimed_value * 100,Higher is better,P5
+IND-03-07,DOM-03,Business & Economic Justice,Arbitration Award Enforcement Timeliness,days,avg_days_to_exequatur,Lower is better,P5
+IND-03-08,DOM-03,Business & Economic Justice,Land & Property Dispute Resolution Duration,days,sum(land_case_days) / decided_land_cases,Lower is better,P5
+IND-03-09,DOM-03,Business & Economic Justice,Judicial Predictability in Commercial Rulings,index_0_100,consistency_score_across_circuits,Higher is better,P5
+IND-03-10,DOM-03,Business & Economic Justice,Court-Annexed Commercial Mediation Rate,percentage,mediated_commercial / total_commercial * 100,Higher is better,P5
+IND-04-01,DOM-04,Digital Judiciary,e-Court Civil Filing Penetration,percentage,ecourt_filings / total_civil_filings * 100,Higher is better,P5
+IND-04-02,DOM-04,Digital Judiciary,e-Litigation Full-Cycle Adoption Rate,percentage,elitigation_cases / ecourt_filings * 100,Higher is better,P5
+IND-04-03,DOM-04,Digital Judiciary,SIPP Real-Time Data Sync Compliance,percentage,synced_courts / total_courts * 100,Higher is better,P5
+IND-04-04,DOM-04,Digital Judiciary,Direktori Putusan Publication Rate,percentage,published_decisions / decided_cases * 100,Higher is better,P5
+IND-04-05,DOM-04,Digital Judiciary,Electronic Summons (e-Summons) Share,percentage,esummons_sent / total_summons * 100,Higher is better,P5
+IND-04-06,DOM-04,Digital Judiciary,Digital Payment (e-Payment) Adoption,percentage,epayment_tx / total_fee_tx * 100,Higher is better,P5
+IND-04-07,DOM-04,Digital Judiciary,Average Days from Decision to Online Upload,days,sum(upload_lag_days) / published_decisions,Lower is better,P5
+IND-04-08,DOM-04,Digital Judiciary,Machine-Readable Decision Metadata Coverage,percentage,structured_decisions / published_decisions * 100,Higher is better,P5
+IND-04-09,DOM-04,Digital Judiciary,Virtual Hearing (Teleconference) Utilization,percentage,virtual_hearings / total_hearings * 100,Higher is better,P5
+IND-04-10,DOM-04,Digital Judiciary,Court Website & Open Data Uptime,percentage,uptime_hours / total_hours * 100,Higher is better,P5
+IND-05-01,DOM-05,Institutional Integrity,LHKPN Wealth Disclosure Compliance Rate,percentage,submitted_lhkpn / obligated_officials * 100,Higher is better,P5
+IND-05-02,DOM-05,Institutional Integrity,WBK / WBBM Integrity Zone Certification Share,percentage,certified_satkers / total_satkers * 100,Higher is better,P5
+IND-05-03,DOM-05,Institutional Integrity,Public Complaint (SIWAS) Resolution Rate,percentage,resolved_complaints / received_complaints * 100,Higher is better,P5
+IND-05-04,DOM-05,Institutional Integrity,Average Complaint Investigation Turnaround,days,sum(investigation_days) / resolved_complaints,Lower is better,P5
+IND-05-05,DOM-05,Institutional Integrity,BPK Financial Audit Opinion Score,score_1_to_4,wtp_4_wdp_3_tw_2_tmp_1,Higher is better,P5
+IND-05-06,DOM-05,Institutional Integrity,Budget Realization & Transparency Index,percentage,realized_budget / allocated_budget * 100,Optimal 95-100,P5
+IND-05-07,DOM-05,Institutional Integrity,Ethics & Code of Conduct Training Coverage,percentage,trained_personnel / total_personnel * 100,Higher is better,P5
+IND-05-08,DOM-05,Institutional Integrity,Disciplinary Sanction Enforcement Rate,percentage,enforced_sanctions / recommended_sanctions * 100,Higher is better,P5
+IND-05-09,DOM-05,Institutional Integrity,Public Satisfaction Index (IKM) Score,score_0_100,weighted_survey_score,Higher is better,P5
+IND-05-10,DOM-05,Institutional Integrity,Anti-Corruption Perception Index (IPK) Score,score_0_100,weighted_integrity_survey_score,Higher is better,P5

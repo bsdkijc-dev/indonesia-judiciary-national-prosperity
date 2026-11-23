@@ -1,0 +1,55 @@
+name: Publish Approved Datasets to Kaggle
+
+on:
+  workflow_dispatch:
+    inputs:
+      dataset_folder:
+        description: "Dataset folder under datasets/ (or 'all')"
+        required: true
+        default: "all"
+      release_note:
+        description: "Kaggle dataset version message"
+        required: true
+        default: "JNPDI approved dataset release"
+
+jobs:
+  publish-kaggle:
+    runs-on: ubuntu-latest
+    environment: kaggle-production
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify fail-closed governance gate
+        run: |
+          python3 src/jnpdi_validator.py
+          python3 src/governance_gate.py
+
+      - name: Install Kaggle CLI
+        run: pip install kaggle
+
+      - name: Publish approved datasets to Kaggle
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          if [ -z "$KAGGLE_USERNAME" ] || [ -z "$KAGGLE_KEY" ]; then
+            echo "Missing Kaggle secrets in GitHub environment."
+            exit 1
+          fi
+          TARGET="${{ github.event.inputs.dataset_folder }}"
+          MSG="${{ github.event.inputs.release_note }}"
+          if [ "$TARGET" = "all" ]; then
+            DIRS="datasets/01_judicial_performance datasets/02_access_to_justice datasets/03_business_economic_justice datasets/04_digital_judiciary datasets/05_judicial_integrity"
+          else
+            DIRS="datasets/$TARGET"
+          fi
+          for d in $DIRS; do
+            echo "Publishing $d..."
+            kaggle datasets version -p "$d" -m "$MSG" -r zip || kaggle datasets create -p "$d"
+          done

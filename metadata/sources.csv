@@ -1,0 +1,4 @@
+source_id,source_title,publisher,year,license,source_type,url,notes
+SRC-SYN-001,JNPDI Synthetic Demonstration Generator v1.0,JNPDI Research Architecture,2026,CC-BY-4.0,Synthetic,https://bsdkijc-dev.github.io/indonesia-judiciary-national-prosperity/,Synthetic benchmark records for pipeline testing only; not official Mahkamah Agung statistics.
+SRC-MA-LKPJ-2025,Mahkamah Agung RI Annual Report (Laporan Tahunan) Reference Schema,Mahkamah Agung RI,2025,Open Government Reference,Official-Schema,https://www.mahkamahagung.go.id/,Reference schema for official court statistics (requires formal approval before P1/P2 publication).
+SRC-BPS-2025,BPS-Statistics Indonesia Provincial Socioeconomic Reference,Badan Pusat Statistik,2025,BPS Open Data,Official-Reference,https://www.bps.go.id/,Macroeconomic and demographic denominator reference.

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or indicator framework, please cite it as below."
+title: "Judiciary & National Prosperity Data Initiative (JNPDI) — Indonesia"
+version: 1.0.0
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity"
+authors:
+  - family-names: "Mustafa"
+    given-names: "Cecep"
+    orcid: "https://orcid.org/0000-0003-0037-497X"
+keywords:
+  - judicial-data
+  - indonesia
+  - rule-of-law
+  - access-to-justice
+  - legal-research
+  - national-development
+  - open-data
+  - data-science

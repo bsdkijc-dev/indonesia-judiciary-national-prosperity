@@ -1,0 +1,12 @@
+column_name,data_type,description,nullable
+record_id,string,Unique observation identifier,No
+indicator_id,string,Standardized JNPDI indicator ID (IND-XX-YY),No
+domain_id,string,JNPDI thematic domain ID (DOM-01 to DOM-05),No
+jurisdiction,string,"Jurisdiction code (e.g., ID-NAT)",No
+year,integer,Calendar observation year,No
+value,float,Numeric indicator observation (empty if missing; zero-imputation enforced),Yes
+unit,string,Measurement unit matching metadata/indicators_50.csv,No
+source_id,string,Provenance identifier referencing sources.csv,No
+classification,string,Data sensitivity classification (P1-P5; P5 for synthetic),No
+is_synthetic,boolean,"true for synthetic demonstration data, false for official data",No
+publication_status,string,Release status (test_only for synthetic data),No

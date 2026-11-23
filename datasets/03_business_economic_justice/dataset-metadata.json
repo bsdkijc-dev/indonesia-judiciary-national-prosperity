@@ -1,0 +1,17 @@
+{
+  "title": "Indonesian Business & Economic Justice Dataset (JNPDI Synthetic Benchmark)",
+  "id": "judicialcollege/jnpdi-business-economic-justice",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "judicial-data",
+    "indonesia",
+    "rule-of-law",
+    "open-data",
+    "jnpdi"
+  ],
+  "description": "Thematic research dataset for Business & Economic Justice under the Judiciary & National Prosperity Data Initiative (JNPDI). Current release contains strictly labeled P5 synthetic benchmark data for reproducible pipeline testing."
+}

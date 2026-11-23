@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JNPDI — Judiciary &amp; National Prosperity Data Initiative</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="disclaimer-bar" role="banner">
+    <strong>SYNTHETIC DATA NOTICE:</strong> Current public demonstration datasets carry <code>classification=P5</code>, <code>is_synthetic=true</code>, <code>publication_status=test_only</code>. They are not official Mahkamah Agung RI statistics.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-badge">JNPDI</span>
+        <div>
+          <h1>JNPDI — Judiciary &amp; National Prosperity Data Initiative</h1>
+          <p class="tagline">Justice Creates Trust. Trust Enables Prosperity.</p>
+        </div>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </div>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary Navigation">
+      <div class="container nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About JNPDI</a>
+        <a href="#judicial-performance">Judicial Performance</a>
+        <a href="#access-to-justice">Access to Justice</a>
+        <a href="#business-economic-justice">Business &amp; Economic Justice</a>
+        <a href="#digital-judiciary">Digital Judiciary</a>
+        <a href="#institutional-integrity">Institutional Integrity</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#research">Research &amp; Publications</a>
+        <a href="#methodology">Methodology</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow">Indonesia Open Judicial Research Infrastructure</p>
+        <h2>Making the contribution of justice to national prosperity measurable, transparent, and researchable.</h2>
+        <p class="lead">
+          The Judiciary &amp; National Prosperity Data Initiative (JNPDI) establishes a standardized 50-indicator framework,
+          fail-closed data governance, and reproducible open-data pipelines across five core judicial domains.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#datasets">Explore 5 Thematic Datasets</a>
+          <a class="btn btn-secondary" href="https://github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-num">5</span><span class="stat-label">Thematic Domains</span></div>
+          <div class="stat-card"><span class="stat-num">50</span><span class="stat-label">Standardized Indicators</span></div>
+          <div class="stat-card"><span class="stat-num">12</span><span class="stat-label">Automated Quality Checks</span></div>
+          <div class="stat-card"><span class="stat-num">20</span><span class="stat-label">Governance Workbook Sheets</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About JNPDI</h2>
+        <p>
+          JNPDI is an evidence-based research initiative exploring how judicial performance, equitable access to justice,
+          predictable economic dispute resolution, digital transformation, and institutional integrity support trust and
+          long-term national development in Indonesia.
+        </p>
+        <p>
+          All public artifacts enforce strict data hygiene: zero imputation for missing values, zero personal identifiers (PII),
+          mandatory source provenance, and automated blocking of restricted (P3/P4) records.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Five Research Domains</h2>
+        <div class="domain-grid">
+          <article id="judicial-performance" class="card">
+            <span class="domain-tag">DOM-01 &middot; 10 Indicators</span>
+            <h3>Judicial Performance</h3>
+            <p>Measures case clearance rates, average disposition time, backlog ratios, appeal/cassation consistency, mediation success, and judgment execution.</p>
+          </article>
+          <article id="access-to-justice" class="card">
+            <span class="domain-tag">DOM-02 &middot; 10 Indicators</span>
+            <h3>Access to Justice</h3>
+            <p>Tracks prodeo fee-waiver coverage, Posbakum legal aid posts, mobile courts (Sidang Keliling), disability accessibility, and small-claims adoption.</p>
+          </article>
+          <article id="business-economic-justice" class="card">
+            <span class="domain-tag">DOM-03 &middot; 10 Indicators</span>
+            <h3>Business &amp; Economic Justice</h3>
+            <p>Monitors commercial contract resolution, bankruptcy/PKPU clearance, IP disputes, industrial relations, tax court clearance, and MSME recovery.</p>
+          </article>
+          <article id="digital-judiciary" class="card">
+            <span class="domain-tag">DOM-04 &middot; 10 Indicators</span>
+            <h3>Digital Judiciary</h3>
+            <p>Evaluates e-Court filing penetration, e-Litigation adoption, SIPP sync compliance, Direktori Putusan publication rates, and upload latency.</p>
+          </article>
+          <article id="institutional-integrity" class="card">
+            <span class="domain-tag">DOM-05 &middot; 10 Indicators</span>
+            <h3>Institutional Integrity</h3>
+            <p>Assesses LHKPN wealth disclosure compliance, WBK/WBBM integrity zones, SIWAS complaint resolution, BPK audit opinions, and public satisfaction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="datasets" class="section">
+      <div class="container">
+        <h2>Thematic Datasets (Kaggle &amp; GitHub)</h2>
+        <p>Each dataset package includes <code>data.csv</code>, <code>data_dictionary.csv</code>, <code>sources.csv</code>, <code>README.md</code>, <code>methodology.md</code>, and <code>dataset-metadata.json</code>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Domain</th>
+                <th>Dataset Title</th>
+                <th>Classification</th>
+                <th>Status</th>
+                <th>Repository / Kaggle Target</th>
+              </tr>
+            </thead>
+            <tbody id="dataset-table-body">
+              <tr>
+                <td>DOM-01</td>
+                <td>Indonesian Judicial Performance Dataset</td>
+                <td>P5 (Synthetic)</td>
+                <td>test_only</td>
+                <td><a href="https://www.kaggle.com/datasets/judicialcollege/jnpdi-judicial-performance" target="_blank" rel="noopener noreferrer">Kaggle Target</a></td>
+              </tr>
+              <tr>
+                <td>DOM-02</td>
+                <td>Indonesian Access to Justice Dataset</td>
+                <td>P5 (Synthetic)</td>
+                <td>test_only</td>
+                <td><a href="https://www.kaggle.com/datasets/judicialcollege/jnpdi-access-to-justice" target="_blank" rel="noopener noreferrer">Kaggle Target</a></td>
+              </tr>
+              <tr>
+                <td>DOM-03</td>
+                <td>Indonesian Business &amp; Economic Justice Dataset</td>
+                <td>P5 (Synthetic)</td>
+                <td>test_only</td>
+                <td><a href="https://www.kaggle.com/datasets/judicialcollege/jnpdi-business-economic-justice" target="_blank" rel="noopener noreferrer">Kaggle Target</a></td>
+              </tr>
+              <tr>
+                <td>DOM-04</td>
+                <td>Indonesian Digital Judiciary Dataset</td>
+                <td>P5 (Synthetic)</td>
+                <td>test_only</td>
+                <td><a href="https://www.kaggle.com/datasets/judicialcollege/jnpdi-digital-judiciary" target="_blank" rel="noopener noreferrer">Kaggle Target</a></td>
+              </tr>
+              <tr>
+                <td>DOM-05</td>
+                <td>Indonesian Judicial Integrity Dataset</td>
+                <td>P5 (Synthetic)</td>
+                <td>test_only</td>
+                <td><a href="https://www.kaggle.com/datasets/judicialcollege/jnpdi-judicial-integrity" target="_blank" rel="noopener noreferrer">Kaggle Target</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <h2>Research &amp; Publications</h2>
+        <p>Five reproducible Jupyter notebooks accompany the datasets, separating descriptive synthetic demonstrations from causal claims:</p>
+        <ul class="clean-list">
+          <li><strong>01_judicial_performance_trends.ipynb</strong> — Case clearance, disposition time, and workload trends.</li>
+          <li><strong>02_access_to_justice_distribution.ipynb</strong> — Fee-waiver, Posbakum, and geographic accessibility patterns.</li>
+          <li><strong>03_business_economic_disputes.ipynb</strong> — Commercial, PKPU, IP, and MSME dispute resolution metrics.</li>
+          <li><strong>04_digital_judiciary_adoption.ipynb</strong> — e-Court, e-Litigation, and Direktori Putusan adoption trajectories.</li>
+          <li><strong>05_integrated_justice_prosperity.ipynb</strong> — Cross-domain synthesis linking judicial capacity to prosperity frameworks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="methodology" class="section">
+      <div class="container">
+        <h2>Methodology, Provenance &amp; Data Governance</h2>
+        <div class="two-col">
+          <div class="card">
+            <h3>12-Point Automated Validation</h3>
+            <p>Every CSV passes checks for required columns, unique record IDs, valid indicator IDs, domain alignment, finite numeric values, source provenance, duplicate observations, classification bounds, approval status, synthetic tagging, and unit/range consistency.</p>
+          </div>
+          <div class="card">
+            <h3>Fail-Closed Publication Gate</h3>
+            <p>Data is classified from <code>P1</code> (Public Official Approved) to <code>P5</code> (Synthetic Demonstration). Restricted <code>P3</code> and confidential <code>P4</code> records are automatically blocked by CI/CD before any public release.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Judiciary &amp; National Prosperity Data Initiative (JNPDI)</strong><br />
+        Justice as an Infrastructure for National Prosperity.
+      </div>
+      <div>
+        Lead Architect: Dr. Cecep Mustafa, Ph.D. (<a href="https://orcid.org/0000-0003-0037-497X" target="_blank" rel="noopener noreferrer">ORCID: 0000-0003-0037-497X</a>)<br />
+        Contact: <a href="mailto:cecepmustafa97@gmail.com">cecepmustafa97@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

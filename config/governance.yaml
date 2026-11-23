@@ -1,0 +1,31 @@
+project:
+  name: Judiciary & National Prosperity Data Initiative (JNPDI)
+  repository: indonesia-judiciary-national-prosperity
+  version: 1.0.0
+  maintainer: Dr. Cecep Mustafa, Ph.D.
+  orcid: 0000-0003-0037-497X
+
+classification_levels:
+  P1: Public Official Approved (requires institutional authorization + human approval)
+  P2: Public Research Derived (requires provenance + human approval)
+  P3: Restricted Internal (BLOCKED from public release)
+  P4: Confidential / PII / Sealed Case Data (BLOCKED from public release)
+  P5: Synthetic Demonstration Data (allowed for testing/demo with explicit synthetic labeling)
+
+required_csv_columns:
+  - record_id
+  - indicator_id
+  - domain_id
+  - jurisdiction
+  - year
+  - value
+  - unit
+  - source_id
+  - classification
+  - is_synthetic
+  - publication_status
+
+synthetic_rules:
+  classification: P5
+  is_synthetic: "true"
+  publication_status: test_only

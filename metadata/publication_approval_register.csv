@@ -1,0 +1,6 @@
+dataset_id,dataset_name,classification,is_synthetic,publication_status,privacy_check,provenance_check,human_approval,institutional_auth,approved_by,notes
+01_judicial_performance,Indonesian Judicial Performance Dataset,P5,true,test_only,PASSED,PASSED,PENDING_KAGGLE_PUSH,NOT_REQUIRED_FOR_SYNTHETIC,Dr. Cecep Mustafa,Synthetic demonstration dataset; explicitly labeled non-official.
+02_access_to_justice,Indonesian Access to Justice Dataset,P5,true,test_only,PASSED,PASSED,PENDING_KAGGLE_PUSH,NOT_REQUIRED_FOR_SYNTHETIC,Dr. Cecep Mustafa,Synthetic demonstration dataset; explicitly labeled non-official.
+03_business_economic_justice,Indonesian Business & Economic Justice Dataset,P5,true,test_only,PASSED,PASSED,PENDING_KAGGLE_PUSH,NOT_REQUIRED_FOR_SYNTHETIC,Dr. Cecep Mustafa,Synthetic demonstration dataset; explicitly labeled non-official.
+04_digital_judiciary,Indonesian Digital Judiciary Dataset,P5,true,test_only,PASSED,PASSED,PENDING_KAGGLE_PUSH,NOT_REQUIRED_FOR_SYNTHETIC,Dr. Cecep Mustafa,Synthetic demonstration dataset; explicitly labeled non-official.
+05_judicial_integrity,Indonesian Judicial Integrity Dataset,P5,true,test_only,PASSED,PASSED,PENDING_KAGGLE_PUSH,NOT_REQUIRED_FOR_SYNTHETIC,Dr. Cecep Mustafa,Synthetic demonstration dataset; explicitly labeled non-official.
