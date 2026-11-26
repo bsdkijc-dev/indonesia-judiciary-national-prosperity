@@ -1,4 +1,18 @@
-# Judiciary & National Prosperity Data Initiative (JNPDI) — Indonesia
+<div align="center">
+
+<img src="assets/logo.svg" alt="Judiciary & National Prosperity Data Initiative (JNPDI) Logo" width="140">
+
+# Judiciary & National Prosperity Data Initiative (JNPDI)
+
+### Justice creates trust; trust enables prosperity — 50 standardized indicators and fail-closed governance gates.
+
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE) ![Stack](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white) [![CI](https://github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity/actions/workflows/test-python.yml/badge.svg)](https://github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity/actions/workflows/test-python.yml) [![Website](https://img.shields.io/badge/GitHub_Pages-Live-2ea44f?style=flat&logo=github)](https://bsdkijc-dev.github.io/indonesia-judiciary-national-prosperity/)
+
+[Documentation](docs/) · [Website](https://bsdkijc-dev.github.io/indonesia-judiciary-national-prosperity/) · [Repository](https://github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity)
+
+</div>
+
+---
 
 **Justice Creates Trust. Trust Enables Prosperity.**
 
@@ -24,3 +38,13 @@ python3 src/jnpdi_validator.py
 python3 src/governance_gate.py
 python3 -m unittest discover -s tests -v
 ```
+
+---
+
+<div align="center">
+
+**Judiciary & National Prosperity Data Initiative (JNPDI)**
+
+[github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity](https://github.com/bsdkijc-dev/indonesia-judiciary-national-prosperity)
+
+</div>
